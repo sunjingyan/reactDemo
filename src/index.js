@@ -7,6 +7,7 @@ import Clock from './components/Clock';
 import ClockState from './components/ClockState';
 import HelloWorld from './components/HelloWorld';
 import Welcome from './components/Welcome';
+import Toggle from './components/Toggle';
 
 // ****1
 // const helloElement = <div>hello, world!</div>;
@@ -72,9 +73,12 @@ ReactDOM.render(<WelcomeApp />, document.getElementById('root'));
 // }*/
 
 
-function tick() {
-	ReactDOM.render(<ClockState/>, document.getElementById('root'));
-}
-setInterval(tick, 1000);
+/****8
+// function tick() {
+// 	ReactDOM.render(<ClockState/>, document.getElementById('root'));
+// }
+//setInterval(tick, 1000);*/
+
+ReactDOM.render(<Toggle/>, document.getElementById('root'));
 
 
